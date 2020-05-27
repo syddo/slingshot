@@ -5,7 +5,8 @@
     A session simulator is automatically create based on the test program.
 """
 import argparse
-from LauncherCommand import LauncherCommand
+# from LauncherCommand import LauncherCommand
+import CommonMethods as util
 
 
 def parseArguments():
@@ -32,3 +33,4 @@ def parseArguments():
 if __name__ == '__main__':
     print "Program running..."
     parseArguments()
+    print("Current user: ", util.getUserName())
